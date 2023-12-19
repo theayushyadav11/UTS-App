@@ -314,5 +314,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Please select the mode for booking", Toast.LENGTH_SHORT).show();
         }
     }
-
+    public void bookhis(View v) {
+        Intent i = new Intent(this, bookinghistory.class);
+        startActivity(i);
+    }
+    public void prof(View v) {
+        Intent i = new Intent(this, Login.class);
+        startActivity(i);
+    }
 }

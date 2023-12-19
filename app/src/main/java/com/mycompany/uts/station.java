@@ -26,8 +26,23 @@ String staname[]={
         "PRAYAGRAJ JN.",
         "KUNDA",
         "LUCKNOW CITY",
-        "BHARATPUR"
+        "BHARATPUR",
+        "VARANASI JN"
 };
+    String stanameh[]={
+            "जौनपुर सिटी",
+            "लखनऊ",
+            "जौनपुर",
+            "प्रयागराज संगम",
+            "प्रयागराज जंक्शन",
+            "KUNDA",
+            "लखनऊ सिटी",
+            "भरतपुर"
+            ,"वाराणसी"
+
+    };
+
+
 String abr[]=
     {
            "JOP",
@@ -37,7 +52,8 @@ String abr[]=
            "PRYJ",
            "KUN",
            "LC",
-           "BTE"
+           "BTE",
+            "BSB"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +63,7 @@ String abr[]=
 
         final ArrayList<String> arrayList = new ArrayList<>();
 st=findViewById(R.id.st);
-        for(int i=0;i<8;i++)
+        for(int i=0;i<staname.length;i++)
         {
             arrayList.add(staname[i]+"-"+abr[i]);
         }
@@ -77,6 +93,7 @@ st=findViewById(R.id.st);
                     SharedPreferences.Editor editor=sharedPreferences.edit();
                     editor.putString("sourcestationname", staname[position]);
                     editor.putString("sourcestationabr", abr[position]);
+                    editor.putString("sourcestationnamehindi", stanameh[position]);
                     editor.apply();
                     Intent iw = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(iw);
@@ -86,6 +103,7 @@ st=findViewById(R.id.st);
                     SharedPreferences.Editor editor=sharedPreferences.edit();
                     editor.putString("deststationname", staname[position]);
                     editor.putString("deststationabr", abr[position]);
+                    editor.putString("deststationnamehindi", stanameh[position]);
                     editor.apply();
                     Intent iw = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(iw);
@@ -95,5 +113,11 @@ st=findViewById(R.id.st);
 
             }
         });
+    }
+    public void back(View v)
+    {
+//        Intent i=new Intent(this, MainActivity.class);
+//        startActivity(i);
+        super.onBackPressed();
     }
 }

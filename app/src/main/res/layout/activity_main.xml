@@ -275,6 +275,7 @@
                         android:layout_height="50dp"
                         android:background="#FFFFFF"
                         android:gravity="center"
+                        android:onClick="bookhis"
                         android:orientation="vertical">
 
                         <ImageView
@@ -359,6 +360,7 @@
                         android:layout_marginLeft="5dp"
                         android:background="#FFFFFF"
                         android:gravity="center"
+                        android:onClick="prof"
                         android:orientation="vertical">
 
                         <ImageView

@@ -17,17 +17,18 @@ MainActivity mainActivity=new MainActivity();
         date1=findViewById(R.id.date1);
         SharedPreferences sharedPreferences=getSharedPreferences("Shared Preferences",Context.MODE_PRIVATE);
         date1.setText(sharedPreferences.getString("sharedate",new MainActivity().date));
-        TextView source=findViewById(R.id.source),dest=findViewById(R.id.dest);
+        TextView source=findViewById(R.id.source),dest=findViewById(R.id.dest),via=findViewById(R.id.via);
 
 
 
         SharedPreferences sharedPreference = getSharedPreferences("SourceStation", Context.MODE_PRIVATE);
         source.setText(sharedPreference.getString("sourcestationname", "Station Name"));
-
-
-
-            sharedPreference = getSharedPreferences("SourceStation", Context.MODE_PRIVATE);
             dest.setText(sharedPreference.getString("deststationname", "Station Name"));
+        if(dest.getText().toString().equals("LUCKNOW JN."))
+            via.setText("LKO");
+        else
+            via.setText("-");
+
 
 
 

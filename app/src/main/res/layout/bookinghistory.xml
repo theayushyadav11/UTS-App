@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".viewticket">
 
-    <include layout="@layout/showaction" />
+    <include layout="@layout/bhaction" />
 
     <LinearLayout
 
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SHOW TICKET"
+            android:text="OLD BOOKING HISTORY"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>
@@ -54,7 +54,7 @@
                 android:layout_width="320dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/gradient"
+                android:background="#95F1FE"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -66,7 +66,7 @@
                     android:text="JOURNEY (M-TICKET)"
                     android:textAllCaps="true"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#333131"
                     android:textStyle="bold" />
 
                 <View
@@ -83,7 +83,7 @@
                     android:text="FARE: "
                     android:textAllCaps="true"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#333131"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -100,7 +100,7 @@
                     android:text="90.00 "
                     android:textAllCaps="true"
 
-                    android:textColor="#FFFFFF"
+                    android:textColor="#333131"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -323,17 +323,8 @@
                 <TextView
 
                     android:id="@+id/date1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:textColor="#f78848"
-                    android:textSize="12sp" />
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="05:51"
                     android:textColor="#f78848"
                     android:textSize="12sp" />
 
@@ -392,7 +383,7 @@
                     android:layout_width="129dp"
                     android:layout_height="wrap_content"
                     android:onClick="vt"
-                    android:text="VIEW TICKET"
+                    android:text="BOOK AGAIN"
                     android:textColor="#F87B53"
                     android:textStyle="bold" />
 

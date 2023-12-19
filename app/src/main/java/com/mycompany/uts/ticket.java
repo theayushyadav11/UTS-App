@@ -6,8 +6,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
@@ -15,11 +15,6 @@ import android.text.style.UnderlineSpan;
 import android.widget.TextView;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.TranslateAnimation;
-import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 
 public class ticket extends AppCompatActivity {
     TextView date2, date3, date4;
@@ -56,9 +51,28 @@ public class ticket extends AppCompatActivity {
                 date3 = findViewById(R.id.date3);
                 date4 = findViewById(R.id.date4);
                 SharedPreferences sharedPreferences=getSharedPreferences("Shared Preferences", Context.MODE_PRIVATE);
-                date2.setText(sharedPreferences.getString("sharedate",new MainActivity().date));
-                date3.setText(sharedPreferences.getString("sharedate",new MainActivity().date));
-                date4.setText(sharedPreferences.getString("sharedate",new MainActivity().date));
+                date2.setText(sharedPreferences.getString("sharedate",""));
+                date3.setText(sharedPreferences.getString("sharedate",""));
+                date4.setText(sharedPreferences.getString("sharedate",""));
+                TextView sourcee=findViewById(R.id.sourcee),deste=findViewById(R.id.deste),via=findViewById(R.id.via),ph=findViewById(R.id.phone);
+                TextView sourceh=findViewById(R.id.sourceh),desth=findViewById(R.id.desth);
+
+                SharedPreferences sharedPreference = getSharedPreferences("SourceStation", Context.MODE_PRIVATE);
+                sourcee.setText(sharedPreference.getString("sourcestationname", "Station Name"));
+                deste.setText(sharedPreference.getString("deststationname", "Station Name"));
+                sourceh.setText(sharedPreference.getString("sourcestationnamehindi", "Station "));
+                desth.setText(sharedPreference.getString("deststationnamehindi", "Station"));
+               if(deste.getText().toString().equals("LUCKNOW JN."))
+                   via.setText("LKO");
+               else
+                   via.setText("-");
+
+
+                SharedPreferences Preferences = getSharedPreferences("SourceStation", Context.MODE_PRIVATE);
+                ph.setText(Preferences.getString("phone", "9696620395"));
+
+
+
 
 
             }
@@ -83,5 +97,9 @@ public class ticket extends AppCompatActivity {
 
         // Set the SpannableString to the TextView
         textView.setText(spannableString);
+    }
+    public void back(View b)
+    {
+        super.onBackPressed();
     }
 }
