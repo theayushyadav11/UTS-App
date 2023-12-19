@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".viewticket">
+
+    <include layout="@layout/showaction" />
+
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/showcustbut"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/ticketshow" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SHOW TICKET"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="220dp"
+        android:fadeScrollbars="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bookie"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/gradient"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="JOURNEY (M-TICKET)"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ebedee" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:paddingLeft="5dp"
+                    android:text="FARE: "
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/rupee" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="90.00 "
+                    android:textAllCaps="true"
+
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+
+
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/sletter" />
+
+                <TextView
+                    android:id="@+id/source"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="JAUNPUR CITY"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ebedee" />
+
+                <ImageView
+
+
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/dletter" />
+
+                <TextView
+
+                    android:id="@+id/dest"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="LUCKNOW JN."
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:background="#ebedee" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Via: "
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LKO"
+                    android:textColor="#f78848"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:background="#ebedee" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="22dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="22dp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADULT: "
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#f78848"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="CHILD: "
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#f78848"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="#ebedee" />
+
+                    <TextView
+
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="SECOND (ll) "
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="#ebedee" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="MAIL/EXP  "
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="1dp"
+                    android:background="#ebedee" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:background="#ebedee" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOOKING DATE: "
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f78848"
+                    android:textSize="12sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="05:51"
+                    android:textColor="#f78848"
+                    android:textSize="12sp" />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f78848"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="#ebedee" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UTS NO:"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XCZLDNN002"
+                    android:textColor="#f78848"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:background="#ebedee" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+
+
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/arrow" />
+
+                <TextView
+
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="vt"
+                    android:text="VIEW TICKET"
+                    android:textColor="#F87B53"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ebedee" />
+
+                <ImageView
+
+
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="35dp"
+                    app:srcCompat="@drawable/search" />
+
+                <TextView
+
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT TRAINS"
+                    android:textColor="#F87B53"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
